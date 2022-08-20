@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+
+.Header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 25vh;
+    width: 100%;
+    background-color: transparent;
+    color: var(--gris90);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-image: url('../assets/hexbg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);width: 100%;
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 5rem;
+        width: 50%;
+        height: 100%;
+        h1{
+            color: var(--gris90);
+            font-size: 8rem;
+            font-weight: lighter;
+            font-family: 'Alegreya Sans SC', sans-serif;
+        }
+    }
+    .navigation{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        width: 50%;
+        height: 100%;
+        .list{
+            display: flex;
+            flex-direction: row;
+            padding-left: 3.5rem;
+            font-size: 1.8rem;
+            margin: 2rem;
+            li{
+                padding: 1rem 3rem ;
+                margin: 0;
+                border-bottom: 3px solid transparent;
+                &:hover{
+                    border-bottom: 3px solid var(--gris90);
+                }
+            }
+        }
+    }
+}
