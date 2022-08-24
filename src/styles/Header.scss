@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+@import '../index.scss';
 
-.Header{
+
+.Header {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -16,8 +18,12 @@
     background-position: center top;
     background-size: cover;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);width: 100%;
-    .text{
+    clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+    width: 100%;
+    @include for-phone{
+        height: 10vh;
+    }
+    .text {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -25,30 +31,58 @@
         padding: 0 5rem;
         width: 50%;
         height: 100%;
-        h1{
+        @include for-phone{
+            display: none;
+        }
+        h1 {
             color: var(--gris90);
             font-size: 8rem;
             font-weight: lighter;
             font-family: 'Alegreya Sans SC', sans-serif;
+            @include for-tablet{
+                font-size: 3.2rem;
+            }
+            @include small-screens{
+                font-size: 5rem;
+            }
+            @include medium-screens{
+                font-size: 5.5rem;
+            }
         }
     }
-    .navigation{
+
+    .navigation {
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
         width: 50%;
         height: 100%;
-        .list{
+        @include for-phone{
+            justify-content: center;
+            width: 100%;
+        }
+        .list {
             display: flex;
             flex-direction: row;
             padding-left: 3.5rem;
             font-size: 1.8rem;
             margin: 2rem;
-            li{
-                padding: 1rem 3rem ;
+            @include for-phone{
+                margin: 0 !important;
+                padding: 0;
+                font-size: 1rem;
+            }
+            @include for-tablet{
+                font-size: 1.5rem;
+                padding-left: 0.5rem;
+                margin: 0;
+            }
+            li {
+                padding: 1rem 3rem;
                 margin: 0;
                 border-bottom: 3px solid transparent;
-                &:hover{
+
+                &:hover {
                     border-bottom: 3px solid var(--gris90);
                 }
             }

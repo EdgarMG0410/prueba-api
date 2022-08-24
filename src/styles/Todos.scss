@@ -1,0 +1,36 @@
+.Todos{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+    grid-auto-rows: fit-content;
+}
+
+.TodoItem{
+    box-shadow: 1px 1px 5px var(--gris90);
+    margin: auto;
+    color: var(--gris90);
+    padding: 3rem;
+    margin: 3rem auto;
+    border-radius: 0.3rem;
+    .checkbox{
+        text-align: center;
+        margin-top: 8rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+        input{
+            margin: auto 2rem;
+            width: 2rem;
+            height: 2rem;
+        }
+        .Complete{
+            color: rgb(86, 163, 86);
+            text-decoration:line-through;
+        }
+        .unComplete{
+            color: rgb(199, 58, 58);
+        }
+    }
+}

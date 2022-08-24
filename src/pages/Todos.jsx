@@ -1,8 +1,9 @@
+import { TodoList } from "../components/TodoList"
 
 export const Todos = () => {
     return (
         <>
-            <h1>Todos</h1>
+            <TodoList/>
         </>
     )
 }

@@ -34,7 +34,7 @@ export const Home = () => {
         </div>
         <div className='block text'>
           <p>La mejor galeria fotografica que puedas encontrar.</p>
-          <NavLink to="todos">
+          <NavLink to="gallery">
             <span>Ver fotos...</span>
           </NavLink>
         </div>

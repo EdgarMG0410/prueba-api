@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600;700&display=swap');
+@mixin for-phone {
+  @media (max-width: 479px) {
+      @content;
+  }
+}
+@mixin for-tablet {
+  @media (max-width: 679px) {
+      @content;
+  }
+}
+@mixin small-screens {
+  @media (max-width: 1160px) {
+      @content;
+  }
+}
+@mixin medium-screens {
+  @media (max-width: 1310px) {
+      @content;
+  }
+}
+
 :root{
   font-family: 'Josefin Sans', sans-serif;
   --azul90: #014ba0;
@@ -33,4 +54,7 @@ a{
   flex-direction: column;
   margin-top: 25vh;
   width: 100%;
+  @include for-phone{
+    margin-top: 15vh;
+}
 }

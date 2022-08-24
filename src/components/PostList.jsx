@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { PostItem } from "./PostItem"
+import '../styles/Todos.scss';
 
 export const PostList = () => {
     const [posts, setPosts] = useState([])

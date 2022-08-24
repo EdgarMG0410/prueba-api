@@ -1,4 +1,4 @@
-import '../styles/PostItem.scss';
+import '../styles/Posts.scss';
 
 export const PostItem = (item
 ) => {
